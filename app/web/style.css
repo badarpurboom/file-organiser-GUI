@@ -1,0 +1,100 @@
+@-webkit-keyframes pulse {
+  0% { box-shadow:0 0 10px #ffcc66, inset 0 0 10px #ffcc66; }
+  50% { box-shadow:0 0 14px #ff6666, inset 0 0 14px #ff6666; }
+  100% { box-shadow:0 0 10px #ffcc66, inset 0 0 10px #ffcc66; }
+}
+
+*{
+  margin:0;
+  padding:0;
+  background: #444;
+
+}
+.inner {
+  top: 60px;
+  right: 70px;
+  position: absolute;
+  background-color:transparent;
+  width:150px;
+  height:150px;
+  border-radius:100px;
+  box-shadow: 0 0 10px #ffcc00, inset 0 0 10px #ff6666;
+  -webkit-animation: pulse 2s linear 1s infinite;
+}
+
+.button {
+  background-color: #333;
+  border: none;
+  color: #4d4d4d;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 30px;
+  margin: 4px 2px;
+  cursor: pointer;
+  top: 15%;
+  right:24%;
+  position: absolute;
+  border-radius:100px;
+  width:150px;
+  height:150px;
+  font-weight:bold;
+}
+.inp{
+position:absolute;
+top:67%;
+left:31%;
+transform:translate(-50%,-50%);
+
+}
+
+/* .uplo{
+background:#333;
+border-radius:50px;
+outline:none;
+}
+
+::-webkit-file-upload-button{
+color:white;
+background:#444;
+padding:10px;
+border:solid #333;
+border-radius:50px;
+outline:none;
+}
+
+::-webkit-file-upload-button:hover{
+background:#1010;
+} */
+
+.uplo{
+  position: absolute;
+  width: 100px;
+  height: 40px;
+  border-radius:50px;
+  outline: none;
+  border:solid #333;
+  /* background: #333;
+  border: solid; */
+
+}
+
+.uplo:hover{
+  cursor: pointer;
+}
+
+.b{
+  position:absolute;
+  top:343px;
+  font-size: 10px;
+  left: 3px;
+
+}
+
+.c{
+  position:absolute;
+  top:343px;
+  font-size: 10px;
+  right: 3px;
+}

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>cclutter</title>
+    <script src="/eel.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+</head>
+<body>
+<div class="inner">
+  </div>
+
+<button class="button" onclick="loc()">START</button>
+
+<div class="inp">
+    <!-- <input type="file" class="uplo" id="ab"> -->
+    <button class="uplo" onclick="lo()">Set Location</button>
+</div>
+<!-- <p class="a">Developer:Bdarapur Boom</p> -->
+<p class="b">badarpurboom@gmail.com</p>
+<p class="c">Version:0.1</p>
+
+
+</body>
+</html>
+<script>
+$(document).ready(function(){
+  $(".button").mousedown(function(){
+    $(".button").css("background-color", "#404040");
+    $(".button").css("height", "130px");
+    $(".button").css("width", "130px");
+    $(".button").css("top", "18%");
+    $(".button").css("right", "27%");
+    $(".button").css("position", "absolute");
+    $(".button").css("font-size", "27px");
+  });
+
+  $(".button").mouseup(function(){
+    $(".button").css("background-color", "#333");
+    $(".button").css("height", "150px");
+    $(".button").css("width", "150px");
+    $(".button").css("top", "15%");
+    $(".button").css("right", "24%");
+    $(".button").css("position", "absolute");
+    $(".button").css("font-size", "30px");
+
+  });
+
+});
+
+$(document).ready(function(){
+  $(".uplo").mousedown(function(){
+    $(".uplo").css("background-color", "#333");
+  });
+
+  $(".uplo").mouseup(function(){
+    $(".uplo").css("background-color", "#444");
+  });
+});
+
+
+// function loc(){
+//   const data=document.getElementsByClassName("uplo")
+//   const data = window.location.href;
+//   console.log(data)
+
+// }
+
+
+function lo(){
+  eel.op();
+}
+
+function loc(){
+  eel.start();
+}
+
+</script>
